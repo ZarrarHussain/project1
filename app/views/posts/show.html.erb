@@ -1,0 +1,15 @@
+<div class="post-container">
+  <h1 class="post-title"><%= @post.title %></h1>
+  <p class="post-body"><%= @post.body %></p>
+  
+  <% if @post.image.attached? %>
+    <div class="post-image-container">
+      <%= image_tag @post.image, class: "post-image" %>
+    </div>
+  <% end %>
+  
+  <div class="post-actions">
+    <%= link_to "Edit Post", edit_post_path(@post), class: 'edit-link' %>
+    <%= link_to "Delete", post_path(@post), method: :delete, data: { turbo_method: :delete }, class: 'delete-link' %>
+  </div>
+</div>
