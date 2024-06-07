@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Project1</title>
+    <title>Rails Project</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload' %>
+      <% if content_for?(:additional_css) %>
+        <%= yield :additional_css %>
+      <% end %>    
     <%= javascript_importmap_tags %>
   </head>
 

@@ -1,61 +1,94 @@
 /* styles.css */
-.nav-link {
-    font-size: 20px;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
+
+/* Index Page Specific Styling */
+
+.index-page {
+  font-family: Arial, sans-serif !important;
 }
 
-.nav-link a {
-    text-decoration: none;
-    color: inherit;
+.index-page .nav-link {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
 }
 
-.nav-link a:hover {
-    text-decoration: underline;
+.index-page .nav-link a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.post {
-    margin-bottom: 30px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.index-page .nav-link a:hover {
+  text-decoration: underline;
 }
 
-.post-title {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
+.index-page .button-link {
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.post-title li {
-    list-style: none;
+.index-page .button-link:hover {
+  background-color: #c82333;
 }
 
-.post-body {
-    font-size: 14px;
-    color: #555;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.index-page .post {
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.post-read-link {
-    font-size: 16px;
+.index-page .post-title {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }
 
-.post-read-link a {
-    display: inline-block;
-    padding: 8px 15px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-    background-color: #28a745;
-    border-radius: 5px;
+.index-page .post-body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.post-read-link a:hover {
-    background-color: #21883b;
+.index-page .post-author {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #777;
+}
+
+.index-page .post-read-link {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.index-page .post-read-link a {
+  display: inline-block;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background-color: #28a745;
+  border-radius: 5px;
+}
+
+.index-page .post-read-link a:hover {
+  background-color: #21883b;
 }

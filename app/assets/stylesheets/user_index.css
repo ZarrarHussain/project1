@@ -1,0 +1,48 @@
+/* app/assets/stylesheets/user_index.css */
+
+/* User Index Page Specific Styling */
+.user-index {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.user-index h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-index p {
+  font-size: 16px;
+  color: #555;
+}
+
+.user-index .user-link {
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.user-index .user-link:hover {
+  text-decoration: underline;
+}
+
+.user-index .user-button {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user-index .user-button:hover {
+  background-color: #c82333;
+}
