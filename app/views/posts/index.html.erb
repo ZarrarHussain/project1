@@ -4,17 +4,29 @@
 <h1 class="nav-link">
     <%= link_to "Articles", articles_path %>
 </h1>
+<h1>
+    <%= button_to "Logout", destroy_user_session_path, data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete %>
+
+</h1>
+
 <% @posts.each do |post| %>
-    <div class="post">
-        <h2 class="post-title">
-            <li>
-                <%= post.title %>
-            </li>
-        </h2>
-        <li class="post-body"><%= truncate(post.body, length: 35) %></li>
-        <h3 class="post-read-link">
-            <%= link_to "Read Post", post %>
-        </h3>
-        <br>
+  <% if post.user %>
+  <div class="post">
+    <h2 class="post-title">
+      <%= link_to post.title, post %>
+    </h2>
+    <p class="post-body">
+      <%= truncate(post.body, length: 35) %>
+    </p>
+    <% if post.user %>
+      <p class="post-author">Posted by <%= post.user.email %></p>
+    <% else %>
+      <p class="post-author">Author not available</p>
+    <% end %>
+    <div class="post-read-link">
+      <%= link_to "Read Post", post %>
     </div>
+    <br>
+  </div>
+  <%end%>
 <% end %>
