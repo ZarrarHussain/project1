@@ -4,12 +4,7 @@
   <h1><%= @article.title %></h1>
   <p>Body: <%= @article.body %></p>
   
-  <!-- Display additional content if present -->
-  <% if @article.additional_content.present? %>
-    <p><strong>Comment: </strong> 
-    <br>
-    <%= @article.additional_content %></p>
-  <% end %>
+  
 </div>
 
 <div>

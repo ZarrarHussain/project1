@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
   get 'users/sign_out'
-  resources :articles do
-    post 'create_comment', on: :member
-  end
+  resources :articles, :has_many => :comments
   
-resources :posts  
+resources :posts , :has_many => :comments
 
 root to: 'users#index'
   devise_for :users
