@@ -8,7 +8,6 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1 or /articles/1.json
   def show
-    @comment = Comment.new # Initialize a new comment for the form
   end
 
   # GET /articles/new
@@ -66,6 +65,6 @@ class ArticlesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def article_params
-      params.require(:article).permit(:title, :body, :additional_content, comments_attributes: [:content])
+      params.require(:article).permit(:title, :body)
     end
 end
